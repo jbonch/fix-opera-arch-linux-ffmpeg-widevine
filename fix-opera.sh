@@ -12,7 +12,8 @@ if [ $(uname -m) != "x86_64" ]; then
 fi
 
 readonly TEMP_FOLDER='/tmp'
-readonly OPERA_FOLDER=`dirname "$(readlink -f $(which opera))"`
+#readonly OPERA_FOLDER=`dirname "$(readlink -f $(which opera))"`
+readonly OPERA_FOLDER='/usr/lib/opera'
 readonly FILE_NAME='libffmpeg.so'
 readonly ZIP_FILE='.zip'
 readonly TEMP_FILE="$TEMP_FOLDER/$FILE_NAME"
