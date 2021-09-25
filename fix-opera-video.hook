@@ -1,0 +1,13 @@
+# Fix playing video on Opera Upgrade/Install.
+# Must be in /usr/share/libalpm/hooks/
+
+[Trigger]
+Operation = Install
+Operation = Upgrade
+Type = Package
+Target = opera
+
+[Action]
+Description = Fix playing video in Opera browser
+When = PostTransaction
+Exec = /root/.scripts/fix-opera.sh
